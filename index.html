@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="	UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta File Saver</title>
+<style>
+	h1{
+		text-align: center;
+	}
+
+	div {
+		min-width: 300px;
+		width: 50%;
+		margin: 10px auto;
+	}
+
+	input,
+	textarea {
+		width: 100%;
+		display: block;
+		min-width: 250px;
+	}
+</style>
+</head>
+<body>
+	<h1>Aqui você irá gerar um "VCARD" para o botão "Salvar meu contato" do seu Cartão de Visita Digital</h1>
+	<div>
+		<label for="titulo">Nome do Aquivo</label>
+		<input type="text" id="titulo" placeholder="Ex. Meu contato">
+    </div>
+    <div>
+    	<label for="texto">Código</label>
+    	<textarea id="texto" placeholder="Cole aqui o código para salvar-lo"rows="25"></textarea></textarea>
+    </div>
+    <div>
+    	<button onclick="salvar()">Salvar</button>
+    </div>
+    <script type="text/javascript" src="FileSaver.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
